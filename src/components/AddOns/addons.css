@@ -1,0 +1,55 @@
+.pick {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--Light-gray);
+    border-radius: 7px;
+    margin-bottom: 1rem;
+}
+
+.pick:hover {
+    border-color: var(--Marine-blue);
+}
+
+.pick input {
+    margin: 0 1.5rem;
+}
+
+.pick h4 {
+    margin: 1rem 0;
+    font-size: 1.1rem;
+    color: var(--Marine-blue);
+}
+
+.pick p {
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.pick .description {
+    flex: 1;
+}
+
+.pick span {
+    margin-right: 1rem;
+    color: var(--Purplish-blue);
+    opacity: 0.9;
+}
+
+.picked {
+    background-color: var(--Light-blue);
+    opacity: 0.8;
+}
+
+@media (max-width:769px) {
+    .pick {
+        height: 80px;
+    }
+
+    main p {
+        margin-bottom: 1rem;
+    }
+
+    .btns {
+        margin: 0;
+    }
+}

@@ -1,0 +1,126 @@
+.boxes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(102px, 1fr));
+    gap: 1rem;
+}
+
+.boxes .box {
+    border: 1px solid var(--Cool-gray);
+    padding: 1rem 1rem 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.box:hover {
+    border-color: var(--Marine-blue);
+}
+
+.box img {
+    margin-bottom: 2rem;
+}
+
+.box h4 {
+    color: var(--Marine-blue);
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+.box span {
+    color: var(--Cool-gray);
+    font-weight: 500;
+    margin-left: 0.5rem;
+}
+
+.box p {
+    margin-bottom: 0;
+    font-size: 0.9rem;
+}
+
+.periode {
+    margin-top: 3rem;
+    padding: 10px;
+    background-color: var(--Alabaster);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.periode span {
+    margin: 0 1rem;
+    font-size: 0.9rem;
+}
+
+.periode button {
+    cursor: pointer;
+    position: relative;
+    padding: 7px;
+    width: 40px;
+    max-height: 20px;
+    background-color: var(--Marine-blue);
+    border: none;
+    border-radius: 10px;
+}
+
+.periode button span {
+    position: absolute;
+    top: 0;
+    left: -17px;
+    display: block;
+    background-color: var(--White);
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    transition: .3s;
+}
+
+.btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.btns .back {
+    background-color: transparent;
+    color: var(--Cool-gray);
+    font-weight: 700;
+    padding-left: 0;
+}
+
+.checked-box {
+    background-color: var(--Magnolia);
+    border: 1px solid var(--Marine-blue) !important;
+}
+
+.toggle {
+    left: 17px !important;
+}
+
+@media (max-width:769px) {
+    .boxes {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .box {
+        display: flex;
+        padding-bottom: 0 !important;
+
+    }
+
+    .box img {
+        margin-right: 1rem;
+    }
+
+    .box p {
+        position: absolute;
+        margin-top: 2rem;
+        margin-left: 0.8rem;
+        transform: translateX(50%);
+    }
+
+    .btns {
+        margin-top: 0;
+    }
+}

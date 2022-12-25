@@ -1,0 +1,74 @@
+.landing {
+    background: url(../../../public/assets/images/bg-sidebar-desktop.svg) 50%/cover no-repeat;
+    width: calc(100% / 3);
+    height: 100%;
+    padding: 3rem 1rem 0 1rem;
+    color: white;
+    margin-right: 3rem;
+}
+
+.step {
+    display: flex;
+}
+
+.step .number {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid var(--White);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+.step-detail {
+    margin-bottom: 1rem;
+}
+
+.step-detail span {
+    text-transform: uppercase;
+    font-size: .9rem;
+    color: var(--Cool-gray);
+}
+
+.step-detail h3 {
+    margin: 0.5rem 0 1rem;
+    font-size: .95rem;
+    font-weight: 500;
+}
+
+.active {
+    background-color: var(--Light-blue);
+    color: black;
+    font-weight: 500;
+}
+
+@media (max-width:769px) {
+
+    .landing {
+        margin: 0 auto;
+        background-size: cover;
+        padding: 1rem;
+        width: fit-content;
+        z-index: -1;
+        position: absolute;
+        transform: rotate(90deg);
+        top: -97%;
+        right: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        flex-direction: column;
+        transform: translate(50%, 50%) rotate(-90deg);
+    }
+
+    .step-detail {
+        display: none;
+    }
+
+    .step .number {
+        margin: 1rem;
+        transform: rotate(90deg);
+    }
+}
